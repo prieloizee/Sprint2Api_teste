@@ -42,6 +42,15 @@ function validarCadastro() {
         return;
     }
 
+//Ver se vai colocar ou não na progamação
+//Exemplo de uso
+const registroData = {
+    nome: "João",
+    email: "joao@docente.senai.br",
+    cpf: "12345678909",
+    senha: "senhaSegura123",
+    confSenha: "senhaSegura123"
+};
     alert("Cadastro realizado com sucesso!");
 }
 
