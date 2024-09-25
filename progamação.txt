@@ -56,3 +56,15 @@ const registroData = {
 
 // Chama a função de validação
 validarCadastro();
+
+
+
+/////////// Opçoes para email
+} else if (!email.includes("@")) {
+
+      return res.status(400).json({ error: "Email inválido. Deve conter @" });
+    }
+////
+ const emailRegex = /^[a-zA-Z0-9._]+@docente\.senai\.br$/;
+    if (!emailRegex.test(email)) {
+        return res.status(400).json({message: "E-mail deve ter o domínio @docente.senai.br." });
